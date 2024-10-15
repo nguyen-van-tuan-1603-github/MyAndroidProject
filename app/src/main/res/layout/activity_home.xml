@@ -16,30 +16,105 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <FrameLayout
+                android:id="@+id/menu_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Combo"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/combo"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginTop="10dp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/menu_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lẩu"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/combo"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginTop="10dp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/menu_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đồ nhúm lẩu"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/combo"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginTop="10dp"/>
+            </FrameLayout>
+        </LinearLayout>
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout3"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
 
         <FrameLayout
             android:id="@+id/framelayout_3_2"
             android:layout_width="250dp"
-            android:layout_height="120dp">
+            android:layout_height="120dp"
+            android:layout_gravity="left">
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="Haidilao"
-                android:textSize="40sp"
-                android:layout_marginTop="10dp" />
+                android:textSize="40sp" />
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -61,8 +136,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start|center_vertical"
-                android:text="English"
-                android:layout_marginStart="16dp" />
+                android:layout_marginStart="16dp"
+                android:text="English" />
 
             <ImageView
                 android:id="@+id/imageView1"
@@ -100,5 +175,1758 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout4"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"> <!-- Điều chỉnh thành wrap_content -->
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Combo"
+                            android:textSize="25sp" />
+                    </FrameLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:smoothScrollingEnabled="true">
+
+                        <!-- Container LinearLayout chứa các ImageView -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!-- Các ImageView với contentDescription -->
+                            <ImageView
+                                android:id="@+id/anhcombo2n"
+                                android:layout_width="410dp"
+                                android:layout_height="450dp"
+                                android:src="@drawable/combo2n"
+                                android:contentDescription="Hình ảnh combo 2 người" />
+
+                            <ImageView
+                                android:id="@+id/anhcombo4n"
+                                android:layout_width="410dp"
+                                android:layout_height="450dp"
+                                android:src="@drawable/combo4n"
+                                android:contentDescription="Hình ảnh combo 4 người" />
+
+                            <ImageView
+                                android:id="@+id/anhcombo6n"
+                                android:layout_width="410dp"
+                                android:layout_height="450dp"
+                                android:src="@drawable/combo6n"
+                                android:contentDescription="Hình ảnh combo 6 người" />
+
+                            <ImageView
+                                android:id="@+id/anhcombo8n"
+                                android:layout_width="410dp"
+                                android:layout_height="450dp"
+                                android:src="@drawable/combo8n"
+                                android:contentDescription="Hình ảnh combo 8 người" />
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Lẫu"
+                        android:textSize="25dp"/>
+
+                </FrameLayout>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:smoothScrollingEnabled="true">
+
+                    <!-- Container LinearLayout chứa các ImageView -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+
+                            android:layout_width="200dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="25dp">
+                            <ImageView
+                                android:layout_width="125dp"
+                                android:layout_height="125dp"
+                                android:layout_gravity="top|center"
+                                android:src="@drawable/lauxuong"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lẩu Xương"
+                                android:textSize="20sp"
+                                android:layout_gravity="center|left"
+                                android:layout_marginTop="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="55000đ"
+                                android:layout_gravity="center|right"
+                                android:layout_marginTop="35dp"
+                                android:textSize="12sp"/>
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|bottom">
+                                <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|bottom"
+                                android:text="Thêm"
+
+                                    />
+
+
+
+                                  </FrameLayout>
+
+
+    </FrameLayout>
+                        <FrameLayout
+
+                            android:layout_width="200dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="25dp">
+                            <ImageView
+                                android:layout_width="125dp"
+                                android:layout_height="125dp"
+                                android:layout_gravity="top|center"
+                                android:src="@drawable/lauxuong"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lẩu Xương"
+                                android:textSize="20sp"
+                                android:layout_gravity="center|left"
+                                android:layout_marginTop="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="55000đ"
+                                android:layout_gravity="center|right"
+                                android:layout_marginTop="35dp"
+                                android:textSize="12sp"/>
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|bottom">
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom"
+                                    android:text="Thêm"
+
+                                    />
+
+
+
+                            </FrameLayout>
+
+
+                        </FrameLayout>
+                        <FrameLayout
+
+                            android:layout_width="200dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="25dp">
+                            <ImageView
+                                android:layout_width="125dp"
+                                android:layout_height="125dp"
+                                android:layout_gravity="top|center"
+                                android:src="@drawable/lauxuong"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lẩu Xương"
+                                android:textSize="20sp"
+                                android:layout_gravity="center|left"
+                                android:layout_marginTop="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="55000đ"
+                                android:layout_gravity="center|right"
+                                android:layout_marginTop="35dp"
+                                android:textSize="12sp"/>
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|bottom">
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom"
+                                    android:text="Thêm"
+
+                                    />
+
+
+
+                            </FrameLayout>
+
+
+                        </FrameLayout>
+                        <FrameLayout
+
+                            android:layout_width="200dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="25dp">
+                            <ImageView
+                                android:layout_width="125dp"
+                                android:layout_height="125dp"
+                                android:layout_gravity="top|center"
+                                android:src="@drawable/lauxuong"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lẩu Xương"
+                                android:textSize="20sp"
+                                android:layout_gravity="center|left"
+                                android:layout_marginTop="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="55000đ"
+                                android:layout_gravity="center|right"
+                                android:layout_marginTop="35dp"
+                                android:textSize="12sp"/>
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|bottom">
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom"
+                                    android:text="Thêm"
+
+                                    />
+
+
+
+                            </FrameLayout>
+
+
+                        </FrameLayout>
+                        <FrameLayout
+
+                            android:layout_width="200dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="25dp">
+                            <ImageView
+                                android:layout_width="125dp"
+                                android:layout_height="125dp"
+                                android:layout_gravity="top|center"
+                                android:src="@drawable/lauxuong"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lẩu Xương"
+                                android:textSize="20sp"
+                                android:layout_gravity="center|left"
+                                android:layout_marginTop="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="55000đ"
+                                android:layout_gravity="center|right"
+                                android:layout_marginTop="35dp"
+                                android:textSize="12sp"/>
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|bottom">
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom"
+                                    android:text="Thêm"
+
+                                    />
+                                <FrameLayout
+
+                                    android:layout_width="200dp"
+                                    android:layout_height="250dp"
+                                    android:layout_marginLeft="25dp">
+                                    <ImageView
+                                        android:layout_width="125dp"
+                                        android:layout_height="125dp"
+                                        android:layout_gravity="top|center"
+                                        android:src="@drawable/lauxuong"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Lẩu Xương"
+                                        android:textSize="20sp"
+                                        android:layout_gravity="center|left"
+                                        android:layout_marginTop="10dp"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="55000đ"
+                                        android:layout_gravity="center|right"
+                                        android:layout_marginTop="35dp"
+                                        android:textSize="12sp"/>
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom">
+                                        <Button
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center|bottom"
+                                            android:text="Thêm"
+
+                                            />
+
+
+
+                                    </FrameLayout>
+
+
+                                </FrameLayout>
+
+
+
+                            </FrameLayout>
+
+
+                        </FrameLayout>
+                        <FrameLayout
+
+                            android:layout_width="200dp"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="25dp">
+                            <ImageView
+                                android:layout_width="125dp"
+                                android:layout_height="125dp"
+                                android:layout_gravity="top|center"
+                                android:src="@drawable/lauxuong"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lẩu Xương"
+                                android:textSize="20sp"
+                                android:layout_gravity="center|left"
+                                android:layout_marginTop="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="55000đ"
+                                android:layout_gravity="center|right"
+                                android:layout_marginTop="35dp"
+                                android:textSize="12sp"/>
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|bottom">
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom"
+                                    android:text="Thêm"
+
+                                    />
+
+
+
+                            </FrameLayout>
+
+
+                        </FrameLayout>
+
+</LinearLayout>
+                </HorizontalScrollView>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Đồ Nhúm lẩu"
+                        android:textSize="25dp"/>
+
+                </FrameLayout>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:smoothScrollingEnabled="true">
+
+                    <!-- Container LinearLayout chứa các ImageView -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:smoothScrollingEnabled="true">
+
+                        <!-- Container LinearLayout chứa các ImageView -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+                                    <FrameLayout
+
+                                        android:layout_width="200dp"
+                                        android:layout_height="250dp"
+                                        android:layout_marginLeft="25dp">
+                                        <ImageView
+                                            android:layout_width="125dp"
+                                            android:layout_height="125dp"
+                                            android:layout_gravity="top|center"
+                                            android:src="@drawable/lauxuong"
+                                            />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Lẩu Xương"
+                                            android:textSize="20sp"
+                                            android:layout_gravity="center|left"
+                                            android:layout_marginTop="10dp"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="55000đ"
+                                            android:layout_gravity="center|right"
+                                            android:layout_marginTop="35dp"
+                                            android:textSize="12sp"/>
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center|bottom">
+                                            <Button
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center|bottom"
+                                                android:text="Thêm"
+
+                                                />
+
+
+
+                                        </FrameLayout>
+
+
+                                    </FrameLayout>
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </HorizontalScrollView>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Đồ Uống"
+                        android:textSize="25dp"/>
+
+                </FrameLayout>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:smoothScrollingEnabled="true">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:smoothScrollingEnabled="true">
+
+                        <!-- Container LinearLayout chứa các ImageView -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+                                    <FrameLayout
+
+                                        android:layout_width="200dp"
+                                        android:layout_height="250dp"
+                                        android:layout_marginLeft="25dp">
+                                        <ImageView
+                                            android:layout_width="125dp"
+                                            android:layout_height="125dp"
+                                            android:layout_gravity="top|center"
+                                            android:src="@drawable/lauxuong"
+                                            />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Lẩu Xương"
+                                            android:textSize="20sp"
+                                            android:layout_gravity="center|left"
+                                            android:layout_marginTop="10dp"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="55000đ"
+                                            android:layout_gravity="center|right"
+                                            android:layout_marginTop="35dp"
+                                            android:textSize="12sp"/>
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center|bottom">
+                                            <Button
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center|bottom"
+                                                android:text="Thêm"
+
+                                                />
+
+
+
+                                        </FrameLayout>
+
+
+                                    </FrameLayout>
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </HorizontalScrollView>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Đồ Ăn Kèm"
+                        android:textSize="25dp"/>
+
+                </FrameLayout>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:smoothScrollingEnabled="true">
+
+                    <!-- Container LinearLayout chứa các ImageView -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:smoothScrollingEnabled="true">
+
+                        <!-- Container LinearLayout chứa các ImageView -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+                                    <FrameLayout
+
+                                        android:layout_width="200dp"
+                                        android:layout_height="250dp"
+                                        android:layout_marginLeft="25dp">
+                                        <ImageView
+                                            android:layout_width="125dp"
+                                            android:layout_height="125dp"
+                                            android:layout_gravity="top|center"
+                                            android:src="@drawable/lauxuong"
+                                            />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Lẩu Xương"
+                                            android:textSize="20sp"
+                                            android:layout_gravity="center|left"
+                                            android:layout_marginTop="10dp"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="55000đ"
+                                            android:layout_gravity="center|right"
+                                            android:layout_marginTop="35dp"
+                                            android:textSize="12sp"/>
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center|bottom">
+                                            <Button
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center|bottom"
+                                                android:text="Thêm"
+
+                                                />
+
+
+
+                                        </FrameLayout>
+
+
+                                    </FrameLayout>
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </HorizontalScrollView>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Rau ăn Kèm"
+                        android:textSize="25dp"/>
+
+                </FrameLayout>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:smoothScrollingEnabled="true">
+
+                    <!-- Container LinearLayout chứa các ImageView -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:smoothScrollingEnabled="true">
+
+                        <!-- Container LinearLayout chứa các ImageView -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+                                    <FrameLayout
+
+                                        android:layout_width="200dp"
+                                        android:layout_height="250dp"
+                                        android:layout_marginLeft="25dp">
+                                        <ImageView
+                                            android:layout_width="125dp"
+                                            android:layout_height="125dp"
+                                            android:layout_gravity="top|center"
+                                            android:src="@drawable/lauxuong"
+                                            />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Lẩu Xương"
+                                            android:textSize="20sp"
+                                            android:layout_gravity="center|left"
+                                            android:layout_marginTop="10dp"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="55000đ"
+                                            android:layout_gravity="center|right"
+                                            android:layout_marginTop="35dp"
+                                            android:textSize="12sp"/>
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center|bottom">
+                                            <Button
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center|bottom"
+                                                android:text="Thêm"
+
+                                                />
+
+
+
+                                        </FrameLayout>
+
+
+                                    </FrameLayout>
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+                            <FrameLayout
+
+                                android:layout_width="200dp"
+                                android:layout_height="250dp"
+                                android:layout_marginLeft="25dp">
+                                <ImageView
+                                    android:layout_width="125dp"
+                                    android:layout_height="125dp"
+                                    android:layout_gravity="top|center"
+                                    android:src="@drawable/lauxuong"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lẩu Xương"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center|left"
+                                    android:layout_marginTop="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="55000đ"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="35dp"
+                                    android:textSize="12sp"/>
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|bottom">
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|bottom"
+                                        android:text="Thêm"
+
+                                        />
+
+
+
+                                </FrameLayout>
+
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
