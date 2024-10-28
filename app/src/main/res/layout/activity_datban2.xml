@@ -12,87 +12,13 @@
         <FrameLayout
             android:id="@+id/frameLayout4"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="130dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:gravity="center">
 
-                <FrameLayout
-                    android:id="@+id/menu_1"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Combo"
-                        android:layout_gravity="center_horizontal|bottom"
-                        android:layout_marginBottom="5dp"
-                        android:textSize="15sp" />
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/combo"
-                        android:layout_gravity="center_horizontal|top"
-                        android:layout_marginTop="10dp"/>
-                </FrameLayout>
-
-                <FrameLayout
-                    android:id="@+id/menu_2"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Lẩu"
-                        android:layout_gravity="center_horizontal|bottom"
-                        android:layout_marginBottom="5dp"
-                        android:textSize="15sp" />
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/combo"
-                        android:layout_gravity="center_horizontal|top"
-                        android:layout_marginTop="10dp"/>
-                </FrameLayout>
-
-                <FrameLayout
-                    android:id="@+id/menu_3"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Đồ nhúm lẩu"
-                        android:layout_gravity="center_horizontal|bottom"
-                        android:layout_marginBottom="5dp"
-                        android:textSize="13sp" />
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/combo"
-                        android:layout_gravity="center_horizontal|top"
-                        android:layout_marginTop="10dp"/>
-                </FrameLayout>
-            </LinearLayout>
         </FrameLayout>
 
         <FrameLayout
